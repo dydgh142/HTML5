@@ -1,6 +1,11 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/* 기본값 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
 /* 바디 */
 body{
   background-color: #ffc;
@@ -29,10 +34,33 @@ body{
 }
 
 /* 메인 */
-.main{
-  background-color: lightgreen;
+.main {
+  background: lightgreen;
   height: 50vh;
+  display: flow-root;
+  padding: 0 15px;
 }
+
+.group {
+  margin: 0 15px;
+  float: left;
+}
+
+.group1 {
+  background-color: violet;
+  width: 250px;
+}
+
+.group2 {
+  background-color: salmon;
+  width: 300px;
+}
+
+.group3 {
+  background-color: gold;
+  width: 260px;
+}
+
 
 /* 슬로건 */
 .slogan{
