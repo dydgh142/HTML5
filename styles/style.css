@@ -96,6 +96,12 @@ body {
   margin-right: 4px;
 }
 
+/* 메인 메뉴 */
+.menu{
+  background-color: orangered;
+  background-image: linear-gradient(red, green);
+}
+
 /* 비주얼 */
 .visual {
   background: orange;
