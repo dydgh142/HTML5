@@ -117,6 +117,7 @@ body {
 }
 
 .menu-item{
+  position: relative;
   float: left;
   border-left: 2px solid #fff;
   
@@ -149,6 +150,17 @@ body {
   background-color: pink;
   position: absolute;
   display: none;
+  left: 0;
+  top: 47px;
+}
+
+.sub-menu li{
+  display: inline-block;
+}
+
+.is-active .sub-menu{
+  display: block;
+
 }
 
 /* 비주얼 */
