@@ -164,6 +164,7 @@ body {
   right: 0;
 }
 
+/* is-active 선택되었을때 줄바꿈 하지 않게 하는 것. -> no wrap */
 .is-active .sub-menu {
   display: block;
   white-space: nowrap;
