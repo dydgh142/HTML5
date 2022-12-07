@@ -209,24 +209,35 @@ body {
 
 /* @@@@@@@@@@@@@@@@@@@@@@@비주얼 @@@@@@@@@@@@@@@@@@@@@*/
 /* 글자 움직이는 것 디자인 */
+/* @ -> at sign rule */
 @keyframes moveEffect{
   0%{
-    font-size: 12px;
+    font-size:12px;
+    color:rgba(0,0,0,.2);
+    transform: translate(0,0);
   }
   100%{
-    font-size: 24px;
+    font-size:24px;
+    color:rgba(0,0,0,1);
+    transform: translate(400px, 75px);
   }
 }
 
 .visual {
-  background: orange;
+  background: pink;
   height: 120px;
+  position: relative;
 }
 
 .visual-text{
-  background-color: coral;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* background-color: coral; */
   animation-name: moveEffect;
   animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  display: inline-block;
+
 }
 
 
