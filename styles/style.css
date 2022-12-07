@@ -122,6 +122,7 @@ body {
   
 }
 
+/* 구체성 점수 10점 */
 .menu-button{
   border: 0;
   background: transparent;
@@ -131,6 +132,17 @@ body {
   font-size: 15px;
   color: #fff;
   text-shadow: 1px 1px 0 #000;
+}
+
+.is-active .menu-button::after {
+  content: "";
+  background: #000;
+  display: block;
+  height: 2px;
+}
+
+.is-active .menu-button{
+  color: yellow;
 }
 
 .sub-menu{
