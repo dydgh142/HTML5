@@ -413,13 +413,32 @@ body {
 
 /* 유효성검사 배너 */
 .validation-list{
-  background-color: yellow;
   margin-top: 25px;
 }
 
 .validation-list li{
-  background-color: pink;
   margin-top: 10px;
+}
+
+.validation-list a{
+  background: #ccc linear-gradient( #ccc, #fff);
+  border-radius:30px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 15px;
+  text-align: center;
+  display: block;
+}
+
+.validation-list a::before{
+  content:url('./images/validation_icon.png');
+  vertical-align:middle;
+}
+
+.validation-list a:focus,
+.validation-list a:hover{
+  color: red;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@슬로건 @@@@@@@@@@@@@@@@@@@@@*/
