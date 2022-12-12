@@ -497,6 +497,47 @@ body {
   float: right;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@ 그룹 2 @@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@@ 검색창 @@@@@@@@@@@@@@@@@@@@@*/
+.search-form{
+  border-radius: 25px 25px 0 0;
+  border: #ccc solid 1px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 15px 20px;
+}
+
+.search-form-inner{
+  display: flex;
+  
+}
+
+.form-group-label{
+  font-size: 14px;
+}
+
+.form-group-label::before{
+  content: '\e802';
+  font-family: fontello;
+}
+
+.form-group-input{
+  margin: 0 10px 0 10px;
+  width: 190px;
+  height: 25px;
+  border-radius: 5px;
+  border: #ccc solid 1px;
+  padding: 0 10px;
+}
+
+.button-fill-button{
+  color: #eee;
+  padding: 5px 10px;
+  background: #212121;
+  border-radius: 5px;
+  border: #212121 solid 1px;
+}
+
+
 
 /* @@@@@@@@@@@@@@@@@@@@@@@슬로건 @@@@@@@@@@@@@@@@@@@@@*/
 .slogan {
