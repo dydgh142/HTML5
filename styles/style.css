@@ -510,6 +510,9 @@ body {
   display: flex;
   
 }
+.form-group{
+  align-items: center;
+}
 
 .form-group-label{
   font-size: 14px;
@@ -527,9 +530,11 @@ body {
   border-radius: 5px;
   border: #ccc solid 1px;
   padding: 0 10px;
+  min-width: 0;
+  flex-grow: 1;
 }
 
-.button-fill-button{
+.button-button{
   color: #eee;
   padding: 5px 10px;
   background: #212121;
