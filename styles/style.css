@@ -1,6 +1,7 @@
 @import url(./fonts.css);
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend{
@@ -401,8 +402,8 @@ body {
 
 /* @@@@@@@@@@@@@@@@@@@@@ 그룹 2 @@@@@@@@@@@@@@@@@@@@@@ */
 .group2 {
-  background-color: salmon;
   width: 380px;
+  height: 300px;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@ 그룹 3 @@@@@@@@@@@@@@@@@@@@@@ */
@@ -499,49 +500,126 @@ body {
 
 /* @@@@@@@@@@@@@@@@@@@@@@@ 그룹 2 @@@@@@@@@@@@@@@@@@@@@*/
 /* @@@@@@@@@@@@@@@@@@@@@@@ 검색창 @@@@@@@@@@@@@@@@@@@@@*/
-.search-form{
-  border-radius: 25px 25px 0 0;
-  border: #ccc solid 1px;
-  background: #ccc linear-gradient(#ccc, #eee);
-  padding: 15px 20px;
+.search-form {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
 }
 
-.search-form-inner{
+.search-form-inner {
   display: flex;
-  
-}
-.form-group{
-  align-items: center;
+  flex-flow: row nowrap;
 }
 
-.form-group-label{
-  font-size: 14px;
-}
-
-.form-group-label::before{
-  content: '\e802';
-  font-family: fontello;
-}
-
-.form-group-input{
-  margin: 0 10px 0 10px;
-  width: 190px;
-  height: 25px;
-  border-radius: 5px;
-  border: #ccc solid 1px;
-  padding: 0 10px;
-  min-width: 0;
+.form-group {
   flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-right: 10px;
+}
+.form-group-label {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.form-group-input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+  flex-grow: 1;
+  min-width: 0;
+  width: 100%;
 }
 
-.button-button{
-  color: #eee;
+.search-button {
+  flex-shrink: 0;
+  background-color: #000;
+  color: #fff;
+  height: 24px;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+.board{
+  margin-top: 20px;
+  position: relative;
+}
+
+.board-list{
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
   padding: 5px 10px;
-  background: #212121;
-  border-radius: 5px;
-  border: #212121 solid 1px;
+  color: #666;
 }
 
+.is-select.tab {
+  background-color: #fff;
+  color: #e85e2c;
+  border-color: currentColor currentColor #fff currentColor;
+}
+
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board-list a {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-list time {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.board-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
+}
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@슬로건 @@@@@@@@@@@@@@@@@@@@@*/
