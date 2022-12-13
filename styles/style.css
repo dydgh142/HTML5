@@ -641,14 +641,14 @@ body {
   display: block;
 }
 
-.news::before{
-  margin-top: 20px;
+.news::before {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 0;
   width: 80%;
-  background: #aaa linear-gradient(to right, #ccc, #fff);
+  height: 1px;
+  background: #000 linear-gradient(to right, rgb(102, 101, 101), #fff);
 }
 
 .news-item{
@@ -665,6 +665,7 @@ body {
 }
 
 .news-item-date{
+  display: block;
   width: 250px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -676,9 +677,13 @@ body {
   float: right;
 }
 .news-item-thumbnail{
-  position: relative;
-  float: left;
   text-align: center;
+  margin-top: 2px;
+}
+
+.news-item-thumbnail img{
+  box-shadow: 0 15px 10px 5px #ccc;
+  margin-bottom: 15px;
 }
 
 .news-more{
