@@ -592,10 +592,12 @@ body {
 }
 
 .board-list li {
+  width: 370px;
   margin-top: 10px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  
 }
 
 .board-list a {
@@ -603,6 +605,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 }
 
 .board-list time {
@@ -620,6 +623,70 @@ body {
 .icon-plus::before {
   color: hsla(110, 50%, 30%, 1);
 }
+
+/* 새소식 뉴스 */
+.news{
+  position: relative;
+  margin-top: 20px;
+}
+
+.news-title{
+  margin: 5px;
+  color: #e85e2c;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.news-link{
+  display: block;
+}
+
+.news::before{
+  margin-top: 20px;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  background: #aaa linear-gradient(to right, #ccc, #fff);
+}
+
+.news-item{
+  margin-top: 15px;
+  display: flow-root;
+  flex-flow: row nowrap;
+}
+
+.news-item-title{
+  width: 250px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  float: right;
+}
+
+.news-item-date{
+  width: 250px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  float: right;
+}
+.news-item-brief{
+  line-height: 1.5;
+  width: 250px;
+  float: right;
+}
+.news-item-thumbnail{
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+.news-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@슬로건 @@@@@@@@@@@@@@@@@@@@@*/
