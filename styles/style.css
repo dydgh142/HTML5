@@ -544,18 +544,7 @@ body {
   font-size: 1.2rem;
 }
 
-.board{
-  margin-top: 20px;
-  position: relative;
-}
 
-.board-list{
-  padding: 10px;
-  font-size: 13px;
-  font-weight: 500;
-  overflow: hidden;
-  display: inline-block;
-}
 
 /* 공지사항 및 자료실 */
 .board {
@@ -566,6 +555,14 @@ body {
 .tab-list {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.board-list{
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .tab {
