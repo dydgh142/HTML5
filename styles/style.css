@@ -779,6 +779,65 @@ body {
   padding: 10px 0;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@ 인기 사이트 @@@@@@@@@@@@@@@@@@@@@*/
+.favorite{
+  position: relative;
+}
+
+.favorite-list{
+  list-style: none;
+  counter-reset: var-count;
+}
+
+.favorite-list li{
+  margin-top: 10px;
+  counter-increment: var-count;
+}
+
+.favorite-list li::before{
+	content: counter(var-count);
+  background-color: #aaa;
+  color: #fff;
+  padding: 1px 6px;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+.up, .stop, .down{
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  background-color: pink;
+  background: url(./images/rank.png);
+  float: right;
+  margin: 3px 5px 0 0;
+}
+
+.down{
+  background-position: 0 -45px;
+}
+
+.stop{
+  background-position: 0 33px;
+}
+
+.favorite-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+
+}
+
+
+
+
 
 /* @@@@@@@@@@@@@@@@@@@@@@@슬로건 @@@@@@@@@@@@@@@@@@@@@*/
 .slogan {
