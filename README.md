@@ -1,48 +1,18 @@
-# 예제로 익히는 HTML5/CSS3
+# Techit_Class
+🧑🏻‍💻 멋쟁이사자처럼 HTML예제
 
-## Git 버전 관리
+---
 
-본인의 github에 **HTML_Basic 저장소 생성**한 후 저장소 주소 복사
+> 기본 HTML/CSS 지식을 쌓으며 연습한 예제 ☃︎
 
-```bash
-https://www.github.com/{Github ID}/HTML_Basic.git
-```
+## Skill
 
-### git clone
+<p align="middle">
+  <img src="https://img.shields.io/badge/language-html-red.svg?style=flat-square"/>
+  <img src="https://img.shields.io/badge/language-css-blue.svg?style=flat-square"/>
+</p><br>
 
-```bash
-# .git 디렉토리를 포함해서 clone
-git clone https://www.github.com/seulbinim/webcafeHTML5.git
+---
+## HTML 과 CSS 문법에 대해 간단히 배워 보는 시간
 
-# remote 저장소 조회
-git remote -v
-
-# remote 저장소 삭제
-git remote rm origin
-
-# remote 저장소 등록
-git remote add https://www.github.com/{Github ID}/HTML_Basic.git
-
-# remote 저장소로 백업
-git push origin main
-```
-
-### npx degit
-
-```bash
-# git 버전 관리 history 제외하고 Clone
-npx degit seulbinim/webcafeHTML5 HTML_Basic
-
-# git 버전 관리를 위한 초기화
-git init
-
-# 최초 커밋 (Commit)
-git add .
-git commit -m "초기화 및 백업(Initialization & Backup)"
-
-# 리모트(Remote) 저장소 등록
-git remote add origin https://www.github.com/{Github ID}/HTML_Basic.git
-
-# 리모트(Remote) 저장소로 백업
-git push origin main
-```
+![result](/results/result.png)
